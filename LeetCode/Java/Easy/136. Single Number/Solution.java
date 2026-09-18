@@ -1,0 +1,13 @@
+class Solution {
+    public int singleNumber(int[] nums) {
+        
+        int n= nums.length;
+        int shan=0;
+        for(int i=0;i<n;i++)
+        {
+            shan=shan^nums[i];
+         }
+         return shan;
+        
+    }
+}
